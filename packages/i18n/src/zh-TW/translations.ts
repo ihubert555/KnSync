@@ -50,7 +50,7 @@ const zhTW: Translations = {
 	clear: '清除',
 	clearRecords: '清除紀錄',
 	clearRecordsDescription:
-		'Sync Engine 會記錄同步狀態以處理本地與遠端檔案之間的變更。此選項允許您選擇性地清除紀錄。警告：此操作可能會導致資料遺失。',
+		'KnSync 會記錄同步狀態以處理本地與遠端檔案之間的變更。此選項允許您選擇性地清除紀錄。警告：此操作可能會導致資料遺失。',
 	completed: '已完成',
 	completedNoop: '已是最新狀態',
 	configure: '設定',
@@ -175,7 +175,7 @@ const zhTW: Translations = {
 				text: '文件頁面',
 			});
 			p1.appendText(
-				'了解如何安全地手動執行遷移。基於資料安全考量，Sync Engine 不會自動執行遷移。若您已遷移過雲端儲存，可以忽略此警告。',
+				'了解如何安全地手動執行遷移。基於資料安全考量，KnSync 不會自動執行遷移。若您已遷移過雲端儲存，可以忽略此警告。',
 			);
 			frag.createEl('p', { text: '確認切換？' });
 		}),
@@ -201,7 +201,7 @@ const zhTW: Translations = {
 		'在專屬面板中管理模組。您可以進行安裝、卸載、更新、啟用、停用、編輯模組或編輯模組來源。',
 	moduleSourcePlaceholder: 'https://example.com/modules.json',
 	moduleSources: '模組來源',
-	moduleSourcesDescription: '編輯取得模組目錄的模組來源，以便安裝第三方 Sync Engine 模組。',
+	moduleSourcesDescription: '編輯取得模組目錄的模組來源，以便安裝第三方 KnSync 模組。',
 	moveLocal: '移動本地',
 	moveRemote: '移動遠端',
 	name: '名稱',
@@ -244,7 +244,7 @@ const zhTW: Translations = {
 	selectAll: '全選',
 	settingTips: ({ labels, addLabel }) =>
 		createFragment((frag) => {
-			const p = frag.createEl('p', { text: '感謝您選擇 Sync Engine！請參閱 ' });
+			const p = frag.createEl('p', { text: '感謝您選擇 KnSync！請參閱 ' });
 			p.createEl('a', {
 				attr: { href: 'https://sync.consensia.cc/usage/settings' },
 				text: '文件',
@@ -262,7 +262,7 @@ const zhTW: Translations = {
 	showProgress: '顯示進度',
 	skip: '跳過',
 	someModulesHidden:
-		'由於 Sync Engine 外掛程式版本過舊，部分模組已隱藏。請更新外掛程式以查看完整模組目錄。',
+		'由於 KnSync 外掛程式版本過舊，部分模組已隱藏。請更新外掛程式以查看完整模組目錄。',
 	speed: '速度',
 	speedLabelDescription: '正確設定此選項可能會提升同步速度。',
 	startNonInteractiveSync: '啟動非互動式同步',
@@ -333,9 +333,9 @@ const zhTW: Translations = {
 	untrustedModuleDescription: ({ fileName, size, path, mtime, ctime }) =>
 		createFragment((frag) => {
 			const p1 = frag.createEl('p');
-			p1.appendText('Sync Engine 偵測到一個已安裝的模組，名為 ');
+			p1.appendText('KnSync 偵測到一個已安裝的模組，名為 ');
 			p1.createEl('code', { text: fileName });
-			p1.appendText('，此模組從未在此庫中向 Sync Engine 註冊。');
+			p1.appendText('，此模組從未在此庫中向 KnSync 註冊。');
 			p1.createEl('strong', { text: '請在繼續之前檢閱以下資訊：' });
 			const ul = frag
 				.createDiv(
@@ -359,7 +359,7 @@ const zhTW: Translations = {
 			li5.createEl('code', { text: mtime });
 			const p2 = frag.createEl('p');
 			p2.createEl('strong', {
-				text: '為了防止惡意程式碼執行，Sync Engine 現需取得您的明確同意。',
+				text: '為了防止惡意程式碼執行，KnSync 現需取得您的明確同意。',
 			});
 			p2.appendText(
 				'若該模組在您的控制範圍內，您可以選擇「設定」並將其啟用；若您不確定其來源，亦可將其刪除。關於此警告的詳細說明，請參閱 ',

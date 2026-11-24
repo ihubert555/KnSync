@@ -48,7 +48,7 @@ const zh: Translations = {
 	clear: '清除',
 	clearRecords: '清除记录',
 	clearRecordsDescription:
-		'Sync Engine 会记录同步状态，以便在本地和远程文件之间解析同步操作。此选项允许您选择性地清除记录。警告：此操作很可能会导致数据丢失。',
+		'KnSync 会记录同步状态，以便在本地和远程文件之间解析同步操作。此选项允许您选择性地清除记录。警告：此操作很可能会导致数据丢失。',
 	completed: '已完成',
 	completedNoop: '已是最新状态',
 	configure: '配置',
@@ -173,7 +173,7 @@ const zh: Translations = {
 				text: '文档页面',
 			});
 			p1.appendText(
-				'了解如何安全地手动执行迁移。出于数据安全考虑，Sync Engine 不会自动执行迁移。如果您已迁移过云端存储，可以忽略此警告。',
+				'了解如何安全地手动执行迁移。出于数据安全考虑，KnSync 不会自动执行迁移。如果您已迁移过云端存储，可以忽略此警告。',
 			);
 			frag.createEl('p', { text: '确认切换？' });
 		}),
@@ -199,7 +199,7 @@ const zh: Translations = {
 		'在专用面板中管理模块。您可以安装、卸载、更新、启用、禁用、编辑模块，或编辑模块源。',
 	moduleSourcePlaceholder: 'https://example.com/modules.json',
 	moduleSources: '模块源',
-	moduleSourcesDescription: '编辑获取模块目录的模块源，以便安装第三方 Sync Engine 模块。',
+	moduleSourcesDescription: '编辑获取模块目录的模块源，以便安装第三方 KnSync 模块。',
 	moveLocal: '移动本地',
 	moveRemote: '移动远程',
 	name: '名称',
@@ -243,7 +243,7 @@ const zh: Translations = {
 	selectAll: '全选',
 	settingTips: ({ addLabel, labels }) =>
 		createFragment((frag) => {
-			const p = frag.createEl('p', { text: '感谢您选择 Sync Engine！访问 ' });
+			const p = frag.createEl('p', { text: '感谢您选择 KnSync！访问 ' });
 			p.createEl('a', {
 				attr: { href: 'https://sync.consensia.cc/zh-Hans/usage/settings' },
 				text: '文档',
@@ -260,8 +260,7 @@ const zh: Translations = {
 	showInstalledOnly: '仅显示已安装',
 	showProgress: '显示进度',
 	skip: '跳过',
-	someModulesHidden:
-		'由于 Sync Engine 插件版本过旧，部分模块已隐藏。请更新插件以查看完整模块目录。',
+	someModulesHidden: '由于 KnSync 插件版本过旧，部分模块已隐藏。请更新插件以查看完整模块目录。',
 	speed: '速度',
 	speedLabelDescription: '正确配置此设置可能会提高同步速度。',
 	startNonInteractiveSync: '开始静默同步',
@@ -331,9 +330,9 @@ const zh: Translations = {
 	untrustedModuleDescription: ({ fileName, size, path, mtime, ctime }) =>
 		createFragment((frag) => {
 			const p1 = frag.createEl('p');
-			p1.appendText('Sync Engine 检测到一个名为 ');
+			p1.appendText('KnSync 检测到一个名为 ');
 			p1.createEl('code', { text: fileName });
-			p1.appendText(' 的已安装模块，该模块从未在当前仓库的 Sync Engine 中注册。');
+			p1.appendText(' 的已安装模块，该模块从未在当前仓库的 KnSync 中注册。');
 			p1.createEl('strong', { text: '请在继续之前查看以下信息：' });
 			const ul = frag
 				.createDiv(
@@ -357,7 +356,7 @@ const zh: Translations = {
 			li5.createEl('code', { text: mtime });
 			const p2 = frag.createEl('p');
 			p2.createEl('strong', {
-				text: '为防止恶意代码执行，Sync Engine 现在需要获得您的明确同意。',
+				text: '为防止恶意代码执行，KnSync 现在需要获得您的明确同意。',
 			});
 			p2.appendText(
 				'如果您确认该模块在您的控制之下，可以选择“配置”并启用它；如果您不知道它来自哪里，可以选择将其删除。关于此警告的详细说明，请参阅 ',

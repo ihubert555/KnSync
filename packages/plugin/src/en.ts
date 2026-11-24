@@ -68,7 +68,7 @@ const en: Translations = {
 	clear: 'Clear',
 	clearRecords: 'Clear records',
 	clearRecordsDescription:
-		'Sync Engine records sync states to resolve sync operations between local and remote files. This option allows you to clear records. Warning: this action is likely to cause changes in sync decisions.',
+		'KnSync records sync states to resolve sync operations between local and remote files. This option allows you to clear records. Warning: this action is likely to cause changes in sync decisions.',
 	completed: 'Completed',
 	completedNoop: 'Already synced',
 	configure: 'Configure',
@@ -201,7 +201,7 @@ const en: Translations = {
 				text: 'documentation page',
 			});
 			p1.appendText(
-				' for how to safely perform a manual migration. For your data safety, Sync Engine does not perform the migration automatically. If you have migrated your cloud storage, you can ignore the warning.',
+				' for how to safely perform a manual migration. For your data safety, KnSync does not perform the migration automatically. If you have migrated your cloud storage, you can ignore the warning.',
 			);
 			frag.createEl('p', { text: 'Confirm to toggle?' });
 		}),
@@ -228,7 +228,7 @@ const en: Translations = {
 	moduleSourcePlaceholder: 'https://example.com/modules.json',
 	moduleSources: 'Module sources',
 	moduleSourcesDescription:
-		'Edit module sources from which the module catalog is obtained. In this way you can install third-party Sync Engine modules.',
+		'Edit module sources from which the module catalog is obtained. In this way you can install third-party KnSync modules.',
 	moveLocal: 'Move local',
 	moveRemote: 'Move remote',
 	name: 'Name',
@@ -275,9 +275,7 @@ const en: Translations = {
 	selectAll: 'Select all',
 	settingTips: ({ labels, addLabel }) =>
 		createFragment((frag) => {
-			const paragraph = frag.createEl('p', {
-				text: 'Thanks for choosing Sync Engine! Access ',
-			});
+			const paragraph = frag.createEl('p', { text: 'Thanks for choosing KnSync! Access ' });
 			paragraph.createEl('a', {
 				attr: { href: 'https://sync.consensia.cc/usage/settings' },
 				text: 'the documentation',
@@ -297,7 +295,7 @@ const en: Translations = {
 	showProgress: 'Show progress',
 	skip: 'Skip',
 	someModulesHidden:
-		'Some modules are hidden since Sync Engine plugin is outdated, update to explore the full module catalog.',
+		'Some modules are hidden since KnSync plugin is outdated, update to explore the full module catalog.',
 	speed: 'Speed',
 	speedLabelDescription: 'Properly configuring this setting could improve sync speed.',
 	startNonInteractiveSync: 'Start non-interactive sync',
@@ -374,9 +372,9 @@ const en: Translations = {
 	untrustedModuleDescription: ({ fileName, size, path, mtime, ctime }) =>
 		createFragment((frag) => {
 			const p1 = frag.createEl('p');
-			p1.appendText('Sync Engine detected an installed module named ');
+			p1.appendText('KnSync detected an installed module named ');
 			p1.createEl('code', { text: fileName });
-			p1.appendText(', which is never registered by Sync Engine in this vault. ');
+			p1.appendText(', which is never registered by KnSync in this vault. ');
 			p1.createEl('strong', {
 				text: 'Please review following information before proceeding:',
 			});
@@ -402,7 +400,7 @@ const en: Translations = {
 			li5.createEl('code', { text: mtime });
 			const p2 = frag.createEl('p');
 			p2.createEl('strong', {
-				text: 'To prevent malicious code execution, Sync Engine now requires your explicit consent. ',
+				text: 'To prevent malicious code execution, KnSync now requires your explicit consent. ',
 			});
 			p2.appendText(
 				'You can choose "Configure" and enable it if it is under your control, or delete it if you don\'t know where is it from. For an explanation of this warning, see ',
