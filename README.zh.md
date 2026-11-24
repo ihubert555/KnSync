@@ -1,3 +1,26 @@
+# KnSync
+
+[English](README.md)
+
+KnSync 是一个私有维护的 Obsidian 双向同步插件，基于 Sync Engine 3.4.3，使用独立的插件 ID `knsync`。本发行版以 WebDAV 为主要同步方式，已在 InfiniCLOUD 上验证。
+
+常规同步通过传输文件和删除旧路径来处理重命名，避免批量操作中同大小、同修改时间的不同文件被错配。重命名大文件会增加传输量。
+
+## 安装与验收
+
+- 需要 Obsidian 1.13.0 或更高版本。按[安装说明](INSTALL.md)安装插件以及随包提供的 WebDAV 模块。
+- 正式切换前，先备份本地和远端数据，再用包含实际笔记的副本和独立 WebDAV 目录完成验收。
+
+## 项目维护
+
+KnSync 由 [**@ihubert555**](https://github.com/ihubert555) 维护。KnSync 的问题请在[私有仓库](https://github.com/ihubert555/KnSync/issues)反馈。
+
+原 Sync Engine 项目及其贡献者保留 [MIT 许可](LICENSE)下的版权。继承的模块 API 以 [Sync Engine 3.4.3](https://github.com/hesprs/sync-engine/releases/tag/3.4.3) 为基准。
+
+## 上游 Sync Engine 参考
+
+以下保留上游项目及其模块生态的说明。
+
 <h1 align="center">
     <img src="./docs/public/logo.svg" alt="Sync Engine 图标" width="280px">
     <br />

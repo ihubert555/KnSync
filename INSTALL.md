@@ -1,6 +1,6 @@
-# 安装 KnSync 3.4.4
+# 安装 KnSync 1.0.0
 
-需要 Obsidian 1.13.0 或以上版本。下载并解压对应的 KnSync 安装包。
+需要 Obsidian 1.13.0 或以上版本。下载并解压对应的 KnSync 安装包。若已安装旧编号 3.4.4，请先停用 KnSync，再手动覆盖插件文件，保留现有的 `data.json`，最后重新启用。
 
 1. 先在测试 Vault 中，把解压后的 `knsync` 文件夹放进该 Vault 的 `.obsidian/plugins/`。
 2. 重启 Obsidian，在「设置 → 第三方插件」启用 KnSync。出现 WebDAV 模块确认时，检查文件是随安装包提供的 `webdav.js`，开启模块及完整性校验，然后保存。

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## KnSync v1.0.0 - 2026-11-24
+
+- Start independent KnSync version numbering with `1.0.0` and list `ihubert555` as maintainer.
+- Keep the batch-rename fix and compatibility with the upstream 3.4.3 module catalog.
+- Refresh the project and installation documentation.
+
 ## KnSync v3.4.4 - 2026-11-24
 
 - Disable heuristic move detection in standard syncs to prevent files with identical timestamps and sizes from being paired incorrectly during batch edits. Renames synchronize through file transfers and deletions.

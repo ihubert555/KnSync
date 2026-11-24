@@ -1,10 +1,10 @@
 {
 	"id": "knsync",
 	"name": "KnSync",
-	"version": "3.4.4",
+	"version": "1.0.0",
 	"minAppVersion": "1.13.0",
-	"authorUrl": "https://hesprs.github.io",
-	"description": "The extensible vault synchronization engine: Fast · Free · Reliable. Supports WebDAV, S3, Google Drive, and Dropbox.",
-	"author": "Hēsperus",
+	"authorUrl": "https://github.com/ihubert555",
+	"description": "Private bidirectional Obsidian Vault synchronization by KnSync, with WebDAV support.",
+	"author": "ihubert555",
 	"isDesktopOnly": false
 }

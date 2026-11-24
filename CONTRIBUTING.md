@@ -1,6 +1,6 @@
-# Contribute to Sync Engine
+# Contribute to KnSync
 
-Sync Engine welcomes any contribution to the plugin core, modules, and documentation, as well as issues and feature requests.
+KnSync is maintained by [@ihubert555](https://github.com/ihubert555). Open KnSync reports and proposals in the [private KnSync repository](https://github.com/ihubert555/KnSync/issues). The upstream contribution guidance below is retained for work on the inherited code and module SDK.
 
 ## Issue Policy
 

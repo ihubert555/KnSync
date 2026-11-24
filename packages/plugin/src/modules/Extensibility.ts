@@ -37,6 +37,7 @@ export type AugmentedModuleMeta = ModuleMeta & { enabled: boolean; source: strin
 const AUTO_UPDATE_DELAY = 500;
 export const MODULE_EXTENSION = '.js';
 export const OFFICIAL_SOURCE = 'https://sync.consensia.cc/modules.json';
+const UPSTREAM_MODULE_API_VERSION = '3.4.3';
 
 export default class Extensibility {
 	private readonly moduleDir: string;
@@ -272,12 +273,14 @@ export default class Extensibility {
 				const content = manual
 					? await fetchSingleSource(url)
 					: (this.sourceCache.get(url) ?? (await fetchSingleSource(url)));
+				const compatibleVersion =
+					url === OFFICIAL_SOURCE ? UPSTREAM_MODULE_API_VERSION : manifest.version;
 				const seenId = new Set<string>();
 				const result: Array<AugmentedModuleMeta> = [];
 				content.forEach((meta: unknown) => {
 					if (!isValidMeta(meta)) return;
 					const { id, minPluginVersion, icon, main } = meta;
-					if (minPluginVersion && compare(manifest.version, minPluginVersion) === -1) {
+					if (minPluginVersion && compare(compatibleVersion, minPluginVersion) === -1) {
 						this.root.pluginOutdated = true;
 						return;
 					}
