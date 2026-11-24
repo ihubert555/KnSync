@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## KnSync v1.0.1 - 2026-11-24
+
+- Display Hubert Kuo as the KnSync author and maintainer.
+
 ## KnSync v1.0.0 - 2026-11-24
 
 - Bundle Simplified Chinese, Traditional Chinese, and Russian interface translations and select them from the Obsidian language setting.

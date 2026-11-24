@@ -1,10 +1,10 @@
 {
 	"id": "knsync",
 	"name": "KnSync",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "1.13.0",
 	"authorUrl": "https://github.com/ihubert555",
 	"description": "Private bidirectional Obsidian Vault synchronization by KnSync, with WebDAV support.",
-	"author": "ihubert555",
+	"author": "Hubert Kuo",
 	"isDesktopOnly": false
 }

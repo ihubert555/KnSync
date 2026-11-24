@@ -13,7 +13,7 @@ Standard syncs handle renames by transferring the file and deleting the old path
 
 ## Maintenance
 
-[**@ihubert555**](https://github.com/ihubert555) maintains KnSync. Report KnSync issues in the [KnSync repository](https://github.com/ihubert555/KnSync/issues).
+[**Hubert Kuo**](https://github.com/ihubert555) maintains KnSync. Report KnSync issues in the [KnSync repository](https://github.com/ihubert555/KnSync/issues).
 
 The original Sync Engine project and its contributors retain their copyright under the [MIT license](LICENSE). The inherited module API follows [Sync Engine 3.4.3](https://github.com/hesprs/sync-engine/releases/tag/3.4.3).
 

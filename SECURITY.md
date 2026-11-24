@@ -1,6 +1,6 @@
 # Security Issues
 
-Report KnSync vulnerabilities privately to [@ihubert555](https://github.com/ihubert555) through this repository’s GitHub Security tab if private reporting is enabled. Use synthetic test data and exclude credentials and Vault contents.
+Report KnSync vulnerabilities privately to [Hubert Kuo](https://github.com/ihubert555) through this repository’s GitHub Security tab if private reporting is enabled. Use synthetic test data and exclude credentials and Vault contents.
 
 Please do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.
 

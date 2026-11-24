@@ -13,7 +13,7 @@ KnSync 是一个开源的 Obsidian 双向同步插件，基于 Sync Engine 3.4.3
 
 ## 项目维护
 
-KnSync 由 [**@ihubert555**](https://github.com/ihubert555) 维护。KnSync 的问题请在[KnSync 仓库](https://github.com/ihubert555/KnSync/issues)反馈。
+KnSync 由 [**Hubert Kuo**](https://github.com/ihubert555) 维护。KnSync 的问题请在[KnSync 仓库](https://github.com/ihubert555/KnSync/issues)反馈。
 
 原 Sync Engine 项目及其贡献者保留 [MIT 许可](LICENSE)下的版权。继承的模块 API 以 [Sync Engine 3.4.3](https://github.com/hesprs/sync-engine/releases/tag/3.4.3) 为基准。
 
