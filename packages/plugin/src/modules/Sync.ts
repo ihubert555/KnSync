@@ -167,7 +167,8 @@ export default class Sync {
 					}
 				},
 				conflictResolver = getConflictResolver(),
-				detectMoves = true,
+				// File identifiers can collide when different files share a timestamp and size.
+				detectMoves = false,
 				needConfirmDeletion = false,
 				needConfirmTasks = false,
 				syncStrategy = settings.syncStrategy,

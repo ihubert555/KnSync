@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## KnSync v3.4.4 - 2026-11-24
+
+- Disable heuristic move detection in standard syncs to prevent files with identical timestamps and sizes from being paired incorrectly during batch edits. Renames synchronize through file transfers and deletions.
+- Use a separate Obsidian plugin ID, `knsync`, for this distribution.
+
 ## Sync Engine v3.4.3 - 2026-11-21
 
 ### Core
