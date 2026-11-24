@@ -2,7 +2,7 @@
 
 [简体中文](README.zh.md)
 
-KnSync is a privately maintained Obsidian plugin for bidirectional Vault sync. It is based on Sync Engine 3.4.3 and uses the separate Obsidian plugin ID `knsync`. WebDAV is the supported setup for this distribution and has been tested with InfiniCLOUD.
+KnSync is an open-source Obsidian plugin for bidirectional Vault sync. It is based on Sync Engine 3.4.3 and uses the separate Obsidian plugin ID `knsync`. WebDAV is the supported setup for this distribution and has been tested with InfiniCLOUD.
 
 Standard syncs handle renames by transferring the file and deleting the old path. This avoids incorrect file pairing when batch edits involve different files with the same modification time and size. Large renames can require additional transfer.
 
@@ -13,7 +13,7 @@ Standard syncs handle renames by transferring the file and deleting the old path
 
 ## Maintenance
 
-[**@ihubert555**](https://github.com/ihubert555) maintains KnSync. Report KnSync issues in the [private repository](https://github.com/ihubert555/KnSync/issues).
+[**@ihubert555**](https://github.com/ihubert555) maintains KnSync. Report KnSync issues in the [KnSync repository](https://github.com/ihubert555/KnSync/issues).
 
 The original Sync Engine project and its contributors retain their copyright under the [MIT license](LICENSE). The inherited module API follows [Sync Engine 3.4.3](https://github.com/hesprs/sync-engine/releases/tag/3.4.3).
 

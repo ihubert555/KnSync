@@ -1,6 +1,6 @@
 # Contribute to KnSync
 
-KnSync is maintained by [@ihubert555](https://github.com/ihubert555). Open KnSync reports and proposals in the [private KnSync repository](https://github.com/ihubert555/KnSync/issues). The upstream contribution guidance below is retained for work on the inherited code and module SDK.
+KnSync is maintained by [@ihubert555](https://github.com/ihubert555). Open KnSync reports and proposals in the [KnSync repository](https://github.com/ihubert555/KnSync/issues). The upstream contribution guidance below is retained for work on the inherited code and module SDK.
 
 ## Issue Policy
 
