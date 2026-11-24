@@ -1,3 +1,6 @@
+import ru from '../../../i18n/src/ru/translations';
+import zhTW from '../../../i18n/src/zh-TW/translations';
+import zh from '../../../i18n/src/zh/translations';
 import en from '@/en';
 import {
 	rateLimiterMiddleware,
@@ -122,6 +125,9 @@ export default class Bootstrap {
 		},
 	) {
 		ctx.registerI18n('en', en);
+		ctx.registerI18n('zh', zh);
+		ctx.registerI18n('zh-TW', zhTW);
+		ctx.registerI18n('ru', ru);
 	}
 
 	readonly start = () => {

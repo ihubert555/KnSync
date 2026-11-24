@@ -95,10 +95,11 @@ export type Translate<O extends TranslationResource> = <K extends keyof O>(
 ) => O[K] extends string | Snippet<General> ? string : DocumentFragment;
 
 export default class I18n {
-	private readonly targetLangs = new Set<ObsidianLanguageCode>([
-		getLanguage(),
-		getLanguage().split('-')[0],
-	] as Array<ObsidianLanguageCode>);
+	private readonly targetLangs = (() => {
+		const locale = getLanguage().replaceAll('_', '-');
+		const language = /^zh-(?:hant|hk|mo|tw)(?:-|$)/iu.test(locale) ? 'zh-TW' : locale;
+		return new Set([language, language.split('-')[0]]);
+	})();
 	readonly i18n: TranslationResource = {};
 
 	private readonly registerI18n = (code: ObsidianLanguageCode, resource: TranslationResource) => {

@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## KnSync v1.0.0 - 2026-11-24
 
+- Bundle Simplified Chinese, Traditional Chinese, and Russian interface translations and select them from the Obsidian language setting.
 - Start independent KnSync version numbering with `1.0.0` and list `ihubert555` as maintainer.
 - Keep the batch-rename fix and compatibility with the upstream 3.4.3 module catalog.
 - Refresh the project and installation documentation.
